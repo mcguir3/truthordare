@@ -4,8 +4,10 @@ input.onButtonPressed(Button.A, function () {
     pick = randint(0, 1)
     if (pick == 0) {
         basic.showString("Truth")
+        basic.clearScreen()
     } else if (pick == 1) {
         basic.showString("Dare")
+        basic.clearScreen()
     } else {
         basic.showIcon(IconNames.No)
     }
@@ -21,6 +23,8 @@ input.onButtonPressed(Button.B, function () {
             . . # . .
             . . # . .
             `)
+        basic.pause(2000)
+        basic.clearScreen()
     } else if (pick == 1) {
         basic.showLeds(`
             . . # . .
@@ -29,6 +33,8 @@ input.onButtonPressed(Button.B, function () {
             . # # # .
             . . # . .
             `)
+        basic.pause(2000)
+        basic.clearScreen()
     } else if (pick == 2) {
         basic.showLeds(`
             . . . . .
@@ -37,6 +43,8 @@ input.onButtonPressed(Button.B, function () {
             . # . . .
             . . . . .
             `)
+        basic.pause(2000)
+        basic.clearScreen()
     } else if (pick == 3) {
         basic.showLeds(`
             . . . . .
@@ -45,6 +53,8 @@ input.onButtonPressed(Button.B, function () {
             . . . # .
             . . . . .
             `)
+        basic.pause(2000)
+        basic.clearScreen()
     } else {
         basic.showIcon(IconNames.No)
     }
